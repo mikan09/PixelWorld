@@ -27,11 +27,12 @@ if (lang.startsWith('ja')) {
 }
 
 .rules {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5;
   white-space: pre-line;
   opacity: 0.9;
   color: #ccc;
+  padding: 0 1rem; /* 👈 モバイルで左右に余白 */
 }
 
 @media (prefers-color-scheme: light) {

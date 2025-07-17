@@ -31,12 +31,14 @@ onMounted(() => {
   grid-template-rows: repeat(16, 1fr);
   gap: 1px;
 
-  /* グリッド全体の幅を画面幅に基づいて調整 */
-  width: calc(100vw - 32px); /* 画面幅から余白を引いた値を調整 */
-  max-width: 500px; /* 最大幅を設定 */
-  aspect-ratio: 1; /* 正方形を維持 */
-  margin: 0 auto; /* 中央寄せ */
-  padding: 0 16px; /* 左右に余白を追加 */
+  width: 100%;
+  max-width: 90vmin;       /* 👈 画面幅に合わせた正方形 */
+  aspect-ratio: 1;         /* 正方形グリッド維持 */
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .cell {

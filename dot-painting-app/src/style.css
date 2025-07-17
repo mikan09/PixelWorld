@@ -24,20 +24,20 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow-x: auto; /* ← 横スクロールを許可 */
+  overflow-x: hidden; /* 👈 横はみ出し防止 */
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 2.4em;
   line-height: 1.2;
-  margin-top: 0.0em; /* 余白を調整 */
-  margin-bottom: 0.0em; /* ↓下の余白も必要なら追加 */
-
+  margin: 0.3em 0 0.5em;
 }
+
 
 button {
   border-radius: 8px;
@@ -63,11 +63,11 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
   width: 100%;
+  max-width: 600px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -85,18 +85,5 @@ button:focus-visible {
   .rules {
     color: #444;
   }
-}
-
-#header {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.rules {
-  font-size: 1.2em;
-  line-height: 1.6;
-  opacity: 0.85;
-  margin-top: 0.5rem;
-  color: #ccc;
 }
 
