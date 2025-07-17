@@ -32,10 +32,11 @@ onMounted(() => {
   gap: 1px;
 
   /* グリッド全体の幅を画面幅に基づいて調整 */
-  width: calc(100vw - 20px); /* 画面幅から余白を引いた値 */
-  max-width: 512px; /* 最大幅を設定 */
+  width: calc(100vw - 32px); /* 画面幅から余白を引いた値を調整 */
+  max-width: 500px; /* 最大幅を設定 */
   aspect-ratio: 1; /* 正方形を維持 */
   margin: 0 auto; /* 中央寄せ */
+  padding: 0 16px; /* 左右に余白を追加 */
 }
 
 .cell {
