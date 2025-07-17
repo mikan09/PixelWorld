@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: auto; /* ← 横スクロールを許可 */
 }
 
 h1 {
@@ -63,6 +64,8 @@ button:focus-visible {
 
 #app {
   max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
