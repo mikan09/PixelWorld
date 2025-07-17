@@ -27,13 +27,20 @@ onMounted(() => {
 <style scoped>
 .grid {
   display: grid;
-  grid-template-columns: repeat(32, 16px);
-  grid-template-rows: repeat(32, 16px);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
   gap: 1px;
+
+  /* グリッド全体の幅を画面幅に基づいて調整 */
+  width: calc(100vw - 20px); /* 画面幅から余白を引いた値 */
+  max-width: 512px; /* 最大幅を設定 */
+  aspect-ratio: 1; /* 正方形を維持 */
+  margin: 0 auto; /* 中央寄せ */
 }
+
 .cell {
-  width: 16px;
-  height: 16px;
+  width: 100%; /* グリッド内で自動調整 */
+  height: 100%; /* グリッド内で自動調整 */
   border: 1px solid #ccc;
   cursor: pointer;
 }

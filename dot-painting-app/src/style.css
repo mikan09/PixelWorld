@@ -31,8 +31,11 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.0em;
+  line-height: 1.2;
+  margin-top: 0.0em; /* 余白を調整 */
+  margin-bottom: 0.0em; /* ↓下の余白も必要なら追加 */
+
 }
 
 button {
@@ -76,4 +79,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .rules {
+    color: #444;
+  }
 }
+
+#header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.rules {
+  font-size: 1.2em;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
